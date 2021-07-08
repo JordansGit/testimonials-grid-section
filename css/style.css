@@ -1,5 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background-color: hsl(210, 46%, 95%)
+
+
+}
+
+h1, h3 {
+  font-weight: 600;
+  color:hsl(0, 0%, 100%); 
+
+}
+
+p {
+  font-size: 13px; 
+  font-weight: 500;
+  color: hsla(0, 0%, 100%, 0.7); 
+
+}
+
+figure h3 {
+  color:hsl(0, 0%, 100%); 
+}
+
+figure p {
+  color: hsla(0, 0%, 81%, 0.5); 
+}
+
+.third h1, .third h3, .fifth h1, .fifth h3 {
+  color: hsl(219, 29%, 14%); 
+}
+
+.third figure p, .fifth figure p {
+  color: hsla(219, 29%, 14%, 0.5)
+}
+
+.third p, .fifth p {
+  color: hsla(219, 29%, 14%, 0.7)
+}
+
+
+.first figure p, .first figure p {
+  color: hsla(0, 0%, 81%, 0.5)
+}
+
+.first p, .first p {
+  color: hsla(0, 0%, 81%, 0.7)
+}
+
+
+
+.first {
+  background-color: hsl(263, 55%, 52%);
+}
+
+.second {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.third {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.fourth {
+  background-color: hsl(219, 29%, 14%);
+} 
+
+.fifth {
+  background-color: hsl(0, 0%, 100%);
+}
+
+
+/* FOOTER */ 
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
+
+/* 
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+*/ 
+/* 
+
+### Primary
+
+Moderate violet: hsl(263, 55%, 52%) -> bg 1
+Very dark grayish blue: hsl(217, 19%, 35%) bg 2
+Very dark blackish blue: hsl(219, 29%, 14%) bg 4 + text of 3, 5
+White: hsl(0, 0%, 100%) bg 3, 5 + text of 4 + text heading of 1,2 
+
+### Neutral
+
+Light gray: hsl(0, 0%, 81%) -> text p of 1, 2. 
+Light grayish blue: hsl(210, 46%, 95%) bg body 
+
+*/ 
 
