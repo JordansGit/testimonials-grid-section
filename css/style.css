@@ -44,7 +44,7 @@ h3 {
 
 
 h1 {
-  font-size: 20px
+  font-size: 20px; 
 }
 
 p {
@@ -141,24 +141,34 @@ article {
   border-radius: 10px; 
 }
 
-article figure, article h1, article p {
-  margin: 25px;
+article figure {
+  margin: 25px 30px 15px 30px;
+}
+
+article h1 {
+  margin: 0 30px;
+}
+
+article p {
+  margin: 25px 30px;
+  line-height: 1.4;
 }
 
 figure {
   display: flex; 
   align-items: center;
-  margin: 0;
 }
 
 figure img {
   height: 100%;
   border-radius: 75%;
-  margin-right: 20px;
+  margin-right: 18px;
+  width: 28px;
+  height: 28px;
 }
 
 figure h3, figure p {
-  margin: 5px 0;
+  margin: 0;
 }
 
 
@@ -166,8 +176,6 @@ figure h3, figure p {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
-
-
 
 /* 
 
