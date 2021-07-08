@@ -2,73 +2,163 @@
 
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
-  background-color: hsl(210, 46%, 95%)
-
-
+  background-color: hsl(210, 46%, 95%); 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
 }
 
-h1, h3 {
+.container {
+  display: grid;
+  grid-template-columns: 255px 255px 255px 255px; 
+  grid-gap: 30px;
+}
+
+/* TEXT */ 
+
+h1 {
+  /* font-size: */ 
   font-weight: 600;
   color:hsl(0, 0%, 100%); 
+}
 
+
+h3 {
+  /* font-size: */ 
+  font-weight: 500;
+  color:hsl(0, 0%, 100%); 
+}
+
+.item3 h3, .item5 h3 {
+  font-weight: 600;
+}
+
+.item1 h1, .item2 h1, .item4 h1 {
+  font-weight: 500;
+}
+
+
+
+
+h1 {
+  font-size: 20px
 }
 
 p {
   font-size: 13px; 
   font-weight: 500;
   color: hsla(0, 0%, 100%, 0.7); 
-
 }
+
+/* COLOURS */ 
 
 figure h3 {
   color:hsl(0, 0%, 100%); 
+  font-size: 13px
 }
 
 figure p {
   color: hsla(0, 0%, 81%, 0.5); 
+  font-size: 11px
 }
 
-.third h1, .third h3, .fifth h1, .fifth h3 {
+.item3 h1, .item3 h3, .item5 h1, .item5 h3 {
   color: hsl(219, 29%, 14%); 
 }
 
-.third figure p, .fifth figure p {
+.item3 figure p, .item5 figure p {
   color: hsla(219, 29%, 14%, 0.5)
 }
 
-.third p, .fifth p {
+.item3 p, .item5 p {
   color: hsla(219, 29%, 14%, 0.7)
 }
 
 
-.first figure p, .first figure p {
+.item1 figure p, .item1 figure p {
   color: hsla(0, 0%, 81%, 0.5)
 }
 
-.first p, .first p {
+.item1 p, .item1 p {
   color: hsla(0, 0%, 81%, 0.7)
 }
 
 
+.item1 img, .item4 img {
+  border: 3px solid hsla(263, 55%, 70%, 0.7)
+}
 
-.first {
+
+.item1 {
   background-color: hsl(263, 55%, 52%);
+  grid-column-start: 1;
+  grid-column-end: 3;
+
 }
 
-.second {
+.item2 {
   background-color: hsl(217, 19%, 35%);
+  grid-column-start: 3;
+  grid-column-end: 4;
+
 }
 
-.third {
+.item3 {
   background-color: hsl(0, 0%, 100%);
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+
 }
 
-.fourth {
+.item4 {
   background-color: hsl(219, 29%, 14%);
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 4;
+
 } 
 
-.fifth {
+.item5 {
   background-color: hsl(0, 0%, 100%);
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 5;
+
+}
+
+
+/* ... */ 
+
+
+article {
+  border-radius: 10px; 
+}
+
+article figure, article h1, article p {
+  margin: 25px;
+}
+
+figure {
+  display: flex; 
+  align-items: center;
+  margin: 0;
+}
+
+figure img {
+  height: 100%;
+  border-radius: 75%;
+  margin-right: 20px;
+}
+
+figure h3, figure p {
+  margin: 5px 0;
 }
 
 
