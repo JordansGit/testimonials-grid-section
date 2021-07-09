@@ -177,6 +177,50 @@ figure h3, figure p {
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 375px) {
+  body {
+    height: auto; 
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 315px; 
+    grid-gap: 30px;
+    margin: 60px 0; 
+  }
+
+  .item1, .item2, .item3, .item4, .item5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .item1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .item2 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .item3 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  .item4 {
+    grid-row-start: 5;
+    grid-row-end: 7;
+  }
+  .item5 {
+    grid-row-start: 7;
+    grid-row-end: 9;
+  }
+
+}
+
+
 /* 
 
 The designs were created to the following widths:
@@ -185,19 +229,6 @@ The designs were created to the following widths:
 - Desktop: 1440px
 
 */ 
-/* 
 
-### Primary
 
-Moderate violet: hsl(263, 55%, 52%) -> bg 1
-Very dark grayish blue: hsl(217, 19%, 35%) bg 2
-Very dark blackish blue: hsl(219, 29%, 14%) bg 4 + text of 3, 5
-White: hsl(0, 0%, 100%) bg 3, 5 + text of 4 + text heading of 1,2 
-
-### Neutral
-
-Light gray: hsl(0, 0%, 81%) -> text p of 1, 2. 
-Light grayish blue: hsl(210, 46%, 95%) bg body 
-
-*/ 
 
