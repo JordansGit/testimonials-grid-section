@@ -180,16 +180,17 @@ figure h3, figure p {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 415px) {
   body {
     height: auto; 
   }
 
   .container {
-    display: grid;
-    grid-template-columns: 315px; 
+    grid-template-columns: 1fr; /*315px*/  
     grid-gap: 30px;
     margin: 60px 0; 
+    padding: 0 1em;
+
   }
 
   .item1, .item2, .item3, .item4, .item5 {
@@ -220,15 +221,98 @@ figure h3, figure p {
 
 }
 
+@media only screen and (min-width: 841px) and (max-width: 1120px) {
+  body {
+    height: auto;
+  }
 
-/* 
+  .container {
+    grid-template-columns: 255px 255px 255px; 
+    overflow: hidden;
+    margin-top: 60px;
 
-The designs were created to the following widths:
+  }
+  
+  .item1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
 
-- Mobile: 375px
-- Desktop: 1440px
+  }
+  .item2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .item3 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .item4 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .item5 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
 
-*/ 
+}
+
+
+@media only screen and (min-width: 416px) and (max-width: 840px) {
+  body {
+    height: auto;
+  }
+  .container {
+    grid-template-columns: 255px 255px; 
+    margin-top: 60px;
+    overflow: hidden;  /* wierd fix container being cut off at top */ 
+  }
+  
+  .item1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+  }
+  .item2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .item3 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .item4 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .item5 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+}
+
+/* 415-560px needed on final rwd */
 
 
 
